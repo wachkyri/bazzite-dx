@@ -23,6 +23,8 @@ modules:
   - type: rpm-ostree
     repos:
       - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
+      - https://copr.fedorainfracloud.org/coprs/bobslept/nerd-fonts/repo/fedora-%OS_VERSION%/bobslept-nerd-fonts-fedora-%OS_VERSION%.repo
+      - https://copr.fedorainfracloud.org/coprs/atim/nushell/repo/fedora-%OS_VERSION%/atim-nushell-fedora-%OS_VERSION%.repo
     install:
       # - micro
       - starship
@@ -30,7 +32,13 @@ modules:
       - neofetch
       - lm_sensors
       - virt-manager
+      - virt-viewer
       - hunspell-fr
+      - podman-compose
+      - podman-docker
+      - ubuntu-nerd-fonts
+      - ubuntumono-nerd-fonts
+      - gnome-boxes
     remove:
       - firefox # default firefox removed in favor of flatpak
       - firefox-langpacks # langpacks needs to also be removed to prevent dependency problems
@@ -76,6 +84,19 @@ modules:
       - Spotify: com.spotify.Client 
       - RawTherapee: com.rawtherapee.RawTherapee
       - MissionCenter: io.missioncenter.MissionCenter 
+
+  - type: fonts
+    fonts:
+      nerd-fonts:
+        - FiraCode
+        - Hack
+        - SourceCodePro
+        - Terminus
+        - JetBrainsMono
+        - NerdFontsSymbolsOnly
+      google-fonts:
+        - Roboto
+        - Open Sans
 
   - type: script
     scripts:

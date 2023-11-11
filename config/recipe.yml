@@ -27,6 +27,10 @@ modules:
       # - micro
       - starship
       - fish
+      - neofetch
+      - lm_sensors
+      - virt-manager
+      - hunspell-fr
     remove:
       - firefox # default firefox removed in favor of flatpak
       - firefox-langpacks # langpacks needs to also be removed to prevent dependency problems
@@ -56,6 +60,22 @@ modules:
       # - Celluloid: io.github.celluloid_player.Celluloid
       # - Krita: org.kde.krita
       - Obsidian: md.obsidian.Obsidian
+      - KeepassXC: org.keepassxc.KeePassXC
+      - Firefox: org.mozilla.firefox
+      - Thunderbird: org.mozilla.Thunderbird
+      - Signal: org.signal.Signal
+      - Telegram: org.telegram.desktop
+      - Syncthing: com.github.zocker_160.SyncThingy
+      - Flatseal: com.
+      - qBittorent: org.qbittorrent.qBittorrent
+      - Flatseal: com.github.tchx84.Flatseal
+      - digiKam: org.kde.digikam  
+      - LibreOffice: org.libreoffice.LibreOffice 
+      - Totem: org.gnome.Totem  
+      - OBS Studio: com.obsproject.Studio
+      - Spotify: com.spotify.Client 
+      - RawTherapee: com.rawtherapee.RawTherapee
+      - MissionCenter: io.missioncenter.MissionCenter 
 
   - type: script
     scripts:

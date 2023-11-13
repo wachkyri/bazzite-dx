@@ -44,6 +44,7 @@ modules:
     remove:
       - tailscale
       - fish
+      - waydroid 
 
   - type: bling # configure what to pull in from ublue-os/bling
     install:

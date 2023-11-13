@@ -74,5 +74,6 @@ modules:
 
   - type: script
     scripts:
+      - extras.sh
       # this sets up the proper policy & signing files for signed images to work
       - signing.sh

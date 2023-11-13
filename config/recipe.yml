@@ -23,12 +23,24 @@ modules:
   - type: rpm-ostree
     repos:
       - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
-      - https://copr.fedorainfracloud.org/coprs/bobslept/nerd-fonts/repo/fedora-%OS_VERSION%/bobslept-nerd-fonts-fedora-%OS_VERSION%.repo
-      - https://copr.fedorainfracloud.org/coprs/atim/nushell/repo/fedora-%OS_VERSION%/atim-nushell-fedora-%OS_VERSION%.repo
+      # - https://copr.fedorainfracloud.org/coprs/bobslept/nerd-fonts/repo/fedora-%OS_VERSION%/bobslept-nerd-fonts-fedora-%OS_VERSION%.repo
     install:
       # - micro
       - starship
       - hunspell-fr
+      # Virt-manager packages from bluefin-dx
+      - qemu
+      - qemu-user-binfmt
+      - virt-manager
+      - libvirt
+      - edk2-ovmf
+      - genisoimage
+      - qemu-img
+      - qemu-system-x86-core
+      - qemu-char-spice
+      - qemu-device-usb-redirect
+      - qemu-device-display-virtio-vga
+      - qemu-device-display-virtio-gpu
     remove:
       - tailscale
       - fish
@@ -44,11 +56,21 @@ modules:
       # - dconf-update-service # a service unit that updates the dconf db on boot
       # - devpod # https://devpod.sh/ as an rpm
       # - gnome-vrr # enables gnome-vrr for your image
-      - container-tools # installs container-related tools onto /usr/bin: kind, kubectx, docker-compose and kubens
+      # - container-tools # installs container-related tools onto /usr/bin: kind, kubectx, docker-compose and kubens
       # - laptop # installs TLP and configures your system for laptop usage
       # - flatpaksync # allows synchronization of user-installed flatpaks, see separate documentation section
 
-
+  - type: fonts
+    fonts:
+      nerd-fonts:
+        - FiraCode
+        - Hack
+        - SourceCodePro
+        - Terminus
+        - JetBrainsMono
+      google-fonts:
+        - Roboto
+        - Open Sans
 
   - type: script
     scripts:

@@ -69,7 +69,7 @@ modules:
       - Signal: org.signal.Signal
       - Telegram: org.telegram.desktop
       - Syncthing: com.github.zocker_160.SyncThingy
-      - Flatseal: com.
+      - Flatseal: com.github.tchx84.Flatseal
       - qBittorent: org.qbittorrent.qBittorrent
       - Flatseal: com.github.tchx84.Flatseal
       - digiKam: org.kde.digikam  

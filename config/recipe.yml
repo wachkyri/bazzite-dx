@@ -28,16 +28,7 @@ modules:
     install:
       # - micro
       - starship
-      - zsh
-      - neofetch
-      - lm_sensors
-      - virt-manager
-      - virt-viewer
       - hunspell-fr
-      - podman-compose
-      - podman-docker
-      - ubuntu-nerd-fonts
-      - ubuntumono-nerd-fonts
     remove:
   
 
@@ -77,19 +68,6 @@ modules:
       - OBS Studio: com.obsproject.Studio
       - Spotify: com.spotify.Client 
       - RawTherapee: com.rawtherapee.RawTherapee
-
-  - type: fonts
-    fonts:
-      nerd-fonts:
-        - FiraCode
-        - Hack
-        - SourceCodePro
-        - Terminus
-        - JetBrainsMono
-        - NerdFontsSymbolsOnly
-      google-fonts:
-        - Roboto
-        - Open Sans
 
   - type: script
     scripts:

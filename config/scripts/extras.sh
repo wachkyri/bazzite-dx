@@ -7,3 +7,4 @@ set -oue pipefail
 
 # Misc
 printf "MOZ_ENABLE_WAYLAND=1" >> /etc/environment
+echo 'eval "$(starship init bash)"' >> /etc/bashrc

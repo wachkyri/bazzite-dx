@@ -30,7 +30,8 @@ modules:
       - starship
       - hunspell-fr
     remove:
-  
+      - tailscale
+      - fish
 
   - type: bling # configure what to pull in from ublue-os/bling
     install:
@@ -48,26 +49,6 @@ modules:
       # - flatpaksync # allows synchronization of user-installed flatpaks, see separate documentation section
 
 
-  - type: yafti # if included, yafti and it's dependencies (pip & libadwaita)
-                #  will be installed and set up
-    custom-flatpaks: # this section is optional
-      # - Celluloid: io.github.celluloid_player.Celluloid
-      # - Krita: org.kde.krita
-      - Obsidian: md.obsidian.Obsidian
-      - KeepassXC: org.keepassxc.KeePassXC
-      - Firefox: org.mozilla.firefox
-      - Thunderbird: org.mozilla.Thunderbird
-      - Signal: org.signal.Signal
-      - Telegram: org.telegram.desktop
-      - Syncthing: com.github.zocker_160.SyncThingy
-      - Flatseal: com.github.tchx84.Flatseal
-      - qBittorent: org.qbittorrent.qBittorrent
-      - Flatseal: com.github.tchx84.Flatseal
-      - digiKam: org.kde.digikam  
-      - LibreOffice: org.libreoffice.LibreOffice 
-      - OBS Studio: com.obsproject.Studio
-      - Spotify: com.spotify.Client 
-      - RawTherapee: com.rawtherapee.RawTherapee
 
   - type: script
     scripts:

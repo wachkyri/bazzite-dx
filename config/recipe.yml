@@ -28,6 +28,7 @@ modules:
       # - micro
       - starship
       - hunspell-fr
+      - langpacks-fr
       # Virt-manager packages from bluefin-dx
       - qemu
       - qemu-user-binfmt

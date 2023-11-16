@@ -46,6 +46,9 @@ modules:
       - fish
       - waydroid 
       - waydroid-selinux
+      - gnome-shell-extension-compiz-windows-effect
+      - gnome-shell-extension-gamerzilla 
+      - gnome-shell-extension-tailscale-gnome-qs
 
   - type: bling # configure what to pull in from ublue-os/bling
     install:

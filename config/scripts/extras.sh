@@ -6,4 +6,3 @@
 set -oue pipefail
 
 # Misc
-echo 'eval "$(starship init bash)"' >> /etc/bashrc
